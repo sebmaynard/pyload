@@ -16,7 +16,7 @@ class EasyNews(Hoster):
         if self.account:
             allAccounts = self.account.getAllAccounts()
             if allAccounts: 
-                firstAccount = [0]
+                firstAccount = allAccounts[0]
                 username = firstAccount['login']
                 password = firstAccount['password']
                 url = pyfile.url
